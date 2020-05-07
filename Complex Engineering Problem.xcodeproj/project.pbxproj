@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C50A390624646D2000E07950 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C50A390524646D2000E07950 /* main.cpp */; };
+		C50A390E24646E3800E07950 /* ReadWriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C50A390C24646E3800E07950 /* ReadWriteManager.cpp */; };
+		C535FBC4246494DC00C3F333 /* Simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C535FBC2246494DC00C3F333 /* Simulation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,14 @@
 /* Begin PBXFileReference section */
 		C50A390224646D2000E07950 /* Complex Engineering Problem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Complex Engineering Problem"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50A390524646D2000E07950 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C50A390C24646E3800E07950 /* ReadWriteManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReadWriteManager.cpp; sourceTree = "<group>"; };
+		C50A390D24646E3800E07950 /* ReadWriteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadWriteManager.h; sourceTree = "<group>"; };
+		C50A3915246480E000E07950 /* TA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TA.h; sourceTree = "<group>"; };
+		C50A3916246482A300E07950 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		C535FBC2246494DC00C3F333 /* Simulation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Simulation.cpp; sourceTree = "<group>"; };
+		C535FBC3246494DC00C3F333 /* Simulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simulation.h; sourceTree = "<group>"; };
+		C535FBC62464981E00C3F333 /* StudentsPerDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentsPerDay.h; sourceTree = "<group>"; };
+		C535FBC7246498B500C3F333 /* StudentDays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentDays.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,41 @@
 		C50A390424646D2000E07950 /* Complex Engineering Problem */ = {
 			isa = PBXGroup;
 			children = (
+				C535FBC52464975000C3F333 /* Simulation */,
+				C50A391024646F2200E07950 /* Models */,
+				C50A390F24646E7F00E07950 /* Managers */,
 				C50A390524646D2000E07950 /* main.cpp */,
 			);
 			path = "Complex Engineering Problem";
+			sourceTree = "<group>";
+		};
+		C50A390F24646E7F00E07950 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C50A390C24646E3800E07950 /* ReadWriteManager.cpp */,
+				C50A390D24646E3800E07950 /* ReadWriteManager.h */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C50A391024646F2200E07950 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C50A3915246480E000E07950 /* TA.h */,
+				C50A3916246482A300E07950 /* Student.h */,
+				C535FBC62464981E00C3F333 /* StudentsPerDay.h */,
+				C535FBC7246498B500C3F333 /* StudentDays.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C535FBC52464975000C3F333 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				C535FBC2246494DC00C3F333 /* Simulation.cpp */,
+				C535FBC3246494DC00C3F333 /* Simulation.h */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C535FBC4246494DC00C3F333 /* Simulation.cpp in Sources */,
 				C50A390624646D2000E07950 /* main.cpp in Sources */,
+				C50A390E24646E3800E07950 /* ReadWriteManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
