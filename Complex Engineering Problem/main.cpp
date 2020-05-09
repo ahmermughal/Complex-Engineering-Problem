@@ -20,10 +20,12 @@ int main(int argc, const char * argv[]) {
     readWriteManager.readFromFile();
     studentDays = readWriteManager.studentDays;
     laptopStack = readWriteManager.laptopStack;
-    Simulation simulation(studentDays, laptopStack);
+    Simulation simulation(studentDays, laptopStack, readWriteManager.taArray);
     
-    simulation.assignLaptopToStudent();
+    //simulation.assignLaptopToStudent();
+    simulation.addStudentsToLaptopQueue();
 
+    
 //    mondayStudentArr = readWriteManager.mondayStudentArray;
 //    
 //    for(int i = 0; i < 9; i++){

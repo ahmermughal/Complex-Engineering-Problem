@@ -11,19 +11,28 @@
 
 #include <stdio.h>
 #include <stack>
+#include <queue>
 #include <iostream>
 #include "StudentDays.h"
+#include "Student.h"
+#include "TA.h"
+#include "TAsPerDay.h"
 using namespace std;
 
 class Simulation{
 private:
     StudentDays studentDays;
+    TAArray taArray;
     stack<int> laptopStack;
+    queue<Student> laptopQueue;
+    queue<Student> taQueue;
     
 public:
-    Simulation(StudentDays studentD, stack<int> laptopS);
+    Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas);
     void assignLaptopToStudent();
-    
+    void addStudentsToLaptopQueue();
+    void addStudentToTAQueue(Student student);
+    void assignStudentToTA(Student student, int taIndex);
 };
 
 

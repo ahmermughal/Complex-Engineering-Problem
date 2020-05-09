@@ -20,6 +20,14 @@ typedef struct teachingAssistant {
     int endTimes[3];
     Student studentWithTA;
     int minute;
+    
+    bool isStudentWithTA(){
+        if(studentWithTA.firstName == ""){
+            return false;
+        }else{
+            return true;
+        }
+    }
 } TA;
 
 #endif /* TA_h */

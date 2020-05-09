@@ -8,23 +8,73 @@
 
 #include "Simulation.h"
 
-Simulation::Simulation(StudentDays studentD, stack<int> laptopS){
+Simulation::Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas){
     studentDays = studentD;
     laptopStack = laptopS;
+    taArray = tas;
+}
+
+void Simulation::assignStudentToTA(Student student, int taIndex){
+    
+    taArray.ta[taIndex].studentWithTA = student;
+    cout<<taArray.ta[taIndex].studentWithTA.firstName<<" is Assigned To "<< taArray.ta[taIndex].name<<endl;
+    
+}
+
+void Simulation::addStudentToTAQueue(Student student){
+    
+    taQueue.push(student);
+    
+    if(taQueue.size() > 0){
+        for(int i = 0; i < taArray.arraySize; i++){
+            if(!taArray.ta[i].isStudentWithTA()){
+                assignStudentToTA(taQueue.front(), i);
+                taQueue.pop();
+                break;
+            }else{
+                cout<<"Student With TA "<<taArray.ta[i].name<<endl;
+            }
+        }
+    }
+    cout<<"TA Queue Size: "<<taQueue.size()<<endl<<endl;
 }
 
 void Simulation::assignLaptopToStudent(){
-    
-    StudentsPerDay mondayStudents = studentDays.mondayStudents;
-    
-    for(int i = 0; i< mondayStudents.size; i++){
+    int laptopQueueSize = laptopQueue.size();
+    for(int i = 0; i< laptopQueueSize; i++){
+        //get student in front of queue
+        Student student = laptopQueue.front();
         
-        mondayStudents.students[i].laptopSerialNum = laptopStack.top();
-        cout<<"Student Serial Number: "<<mondayStudents.students[i].laptopSerialNum<<endl;
+        // assign laptop to student from stack
+        student.laptopSerialNum = laptopStack.top();
+        
+        // it takes one min for student to get laptop assigned
+        student.timePassedInLab += 1;
+        
+        
+        
+        //remove student from queue
+        laptopQueue.pop();
+        
+        // pop assigned laptop from stack
         laptopStack.pop();
+        
+        addStudentToTAQueue(student);
+        
     }
     
-    
-    
+    cout<<"Laptop Queue Size is: "<<laptopQueue.size()<<endl;
 }
+
+void Simulation::addStudentsToLaptopQueue(){
+    StudentsPerDay mondayStudents = studentDays.mondayStudents;
+    for(int i = 0; i< mondayStudents.size; i++){
+        Student student = mondayStudents.students[i];
+        laptopQueue.push(student);
+    }
+    //cout<<"Laptop Queue Size: "<<laptopQueue.size()<<endl;
+    assignLaptopToStudent();
+}
+
+
 

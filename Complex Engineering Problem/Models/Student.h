@@ -13,12 +13,14 @@
 
 using namespace std;
 typedef struct DataStructuresStudent {
-      string firstName;
-      string lastName;
-      int enterTime;
-      int numQuestions;
-      int numAnswered;
-      int laptopSerialNum;
+    string firstName;
+    string lastName;
+    int enterTime;
+    int numQuestions;
+    int numAnswered;
+    int laptopSerialNum;
+    int timePassedInLab;
+    bool withTA = false;
 } Student;
 
 #endif /* Student_h */

@@ -17,6 +17,7 @@
 #include <cstdlib>
 #include "TA.h"
 #include "StudentDays.h"
+#include "TAsPerDay.h"
 using namespace std;
 
 class ReadWriteManager{
@@ -30,6 +31,7 @@ public:
     ReadWriteManager();
     StudentDays studentDays;
     stack<int> laptopStack;
+    TAArray taArray;
     void readFromFile();
 
 };

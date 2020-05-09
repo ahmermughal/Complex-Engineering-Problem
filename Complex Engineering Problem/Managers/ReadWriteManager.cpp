@@ -35,38 +35,39 @@ void ReadWriteManager::readTAArray(ifstream& inFile){
     if(inFile>>nextItem){
         int numberOfTA = stoi(nextItem);
         //cout<<numberOfTA<<endl;
-        TA taArr[numberOfTA];
+        taArray.arraySize =numberOfTA;
+        taArray.ta = new TA[numberOfTA];
+        //TA taArr[numberOfTA];
         
         for(int i = 0; i < numberOfTA; i++){
             inFile >> nextItem;
-            taArr[i].name = nextItem;
+            taArray.ta[i].name = nextItem;
             //cout<<taArr[i].name<<endl;
             
             inFile >> nextItem;
-            taArr[i].startTimes[0] = stoi(nextItem);
+            taArray.ta[i].startTimes[0] = stoi(nextItem);
             
             inFile >> nextItem;
-            taArr[i].endTimes[0] = stoi(nextItem);
+            taArray.ta[i].endTimes[0] = stoi(nextItem);
             
             inFile >> nextItem;
-            taArr[i].startTimes[1] = stoi(nextItem);
+            taArray.ta[i].startTimes[1] = stoi(nextItem);
             
             inFile >> nextItem;
-            taArr[i].endTimes[1] = stoi(nextItem);
+            taArray.ta[i].endTimes[1] = stoi(nextItem);
             
             inFile >> nextItem;
-            taArr[i].startTimes[2] = stoi(nextItem);
+            taArray.ta[i].startTimes[2] = stoi(nextItem);
             
             inFile >> nextItem;
-            taArr[i].endTimes[2] = stoi(nextItem);
+            taArray.ta[i].endTimes[2] = stoi(nextItem);
         }
         
-//        cout<<"Size of TA Array: "<<numberOfTA<< endl;
-//
+        //cout<<"Size of TA Array: "<<numberOfTA<< endl;
+
 //        for(int i = 0; i < numberOfTA; i++){
-//            cout<<taArr[i].name<< endl;
+//            cout<<taArray.ta[i].name<< endl;
 //        }
-        
     }
 }
 
@@ -126,16 +127,16 @@ void ReadWriteManager::readFromFile(){
     // get all Monday Students
     studentDays.mondayStudents.students = readStudentArray(inFile, size);
     studentDays.mondayStudents.size = size;
-    cout<<"Monday Student Size: "<<studentDays.mondayStudents.size<<endl;
+    //cout<<"Monday Student Size: "<<studentDays.mondayStudents.size<<endl;
     
     // get all Tuesday Students
     studentDays.tuesdayStudents.students = readStudentArray(inFile, size);
     studentDays.tuesdayStudents.size = size;
-    cout<<"Tues Student Size: "<<studentDays.tuesdayStudents.size<<endl;
+    //cout<<"Tues Student Size: "<<studentDays.tuesdayStudents.size<<endl;
     
     // get All Wednesday Students;
     studentDays.wednesdayStudents.students = readStudentArray(inFile, size);
     studentDays.wednesdayStudents.size = size;
-    cout<<"Wed Student Size: "<<studentDays.wednesdayStudents.size<<endl;
+    //cout<<"Wed Student Size: "<<studentDays.wednesdayStudents.size<<endl;
     
 }
