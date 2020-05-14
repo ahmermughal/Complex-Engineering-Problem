@@ -33,6 +33,9 @@ public:
     void addStudentsToLaptopQueue();
     void addStudentToTAQueue(Student student);
     void assignStudentToTA(Student student, int taIndex);
+    void assigningStudentToTAQueue(Student student);
+    void deassignStudentFromTA(Student student, int taIndex);
+    void deassignLaptopFromStudent(Student student);
 };
 
 
