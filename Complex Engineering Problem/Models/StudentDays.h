@@ -11,9 +11,8 @@
 #include "StudentsPerDay.h"
 
 typedef struct StudentDays {
-    StudentsPerDay mondayStudents;
-    StudentsPerDay tuesdayStudents;
-    StudentsPerDay wednesdayStudents;
+    StudentsPerDay* dayStudents;
+    int size = 3;
 } StudentDays;
 
 #endif /* StudentDays_h */

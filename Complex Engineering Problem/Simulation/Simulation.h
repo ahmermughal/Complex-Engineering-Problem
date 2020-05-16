@@ -28,26 +28,28 @@ private:
     queue<Student> laptopQueue;
     queue<Student> taQueue;
     int time;
+    int lastTAEndTime;
+    int happy;
+    int frustrated;
     queue<Student> studentQueue;
-
-    
-public:
-    Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas);
-    //void assignLaptopToStudent();
-//    void addStudentsToLaptopQueue();
-//    void addStudentToTAQueue(Student student);
-//    void assignStudentToTA(Student student, int taIndex);
-//    void assigningStudentToTAQueue(Student student);
-//    void deassignStudentFromTA(Student student, int taIndex);
-//    void deassignLaptopFromStudent(Student student);
-//    
-    void startSimulation();
-    void getAvailableTAs();
-    void getStudentsInQueue();
+    void getStudentsInQueue(int num);
+    void getAvailableTAs(int num);
     void moveArrivedStudentsToLaptopQueue();
     void assignLaptopToStudent();
     void assignTAToStudent();
-    void deassignTAFromStudent();
+
+    void setExpectedLabRunTime(int& expectedRunTime, int num);
+    void endTAShift();
+    void sendAllStudentsInLaptopQueueHome(int expectedTimeLimit);
+    void sendAllStudentsInTAQueueHome(int& expectedTimeLimit);
+    void deassignTAFromStudent(int& expectedTimeLimit);
+    void printDaySummary(int expectedTimeLimit, int num, string day);
+    
+public:
+    Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas);
+    void startSimulation();
+   
+
 };
 
 
