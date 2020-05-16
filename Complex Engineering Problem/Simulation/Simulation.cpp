@@ -8,7 +8,7 @@
 
 #include "Simulation.h"
 
-Simulation::Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas){
+Simulation::Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, int numberOfPrograms){
     studentDays = studentD;
     laptopStack = laptopS;
     taArray = tas;
@@ -16,6 +16,8 @@ Simulation::Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas){
     availableTAs.ta = new TA[tas.arraySize];
     time = 0;
     lastTAEndTime = 0;
+    numberOfProg = numberOfPrograms;
+    
 }
 
 
@@ -83,8 +85,8 @@ void Simulation::getAvailableTAs(int num){
     }
 };
 
-void Simulation::getStudentsInQueue(int num){
-    StudentsPerDay dayStudents = studentDays.dayStudents[num];
+void Simulation::getStudentsInQueue(int num, int progNum){
+    StudentsPerDay dayStudents = studentDays[progNum].dayStudents[num];
     // get all student and fill in a queue.
     if(time == 0){
         queue<Student> empty;
@@ -149,21 +151,12 @@ void Simulation::deassignTAFromStudent(int& expectedTimeLimit){
     if(!taQueue.empty()){
         Student currentStudent = taQueue.front();
         
-        // deassign student from TA
-        //        cout<<"Current Time: "<< convertTime(time)<<endl;
-        //        cout<<currentStudent.firstName<<" Passed Time: "<<convertTime(currentStudent.timePassed)<<endl;
-        //
-        //        cout<<"Time when "<<currentStudent.firstName<<" is done with TA: "<<convertTime(currentStudent.timePassed+5)<<endl<<endl;
-        
-        
         for(int i = 0; i < availableTAs.arraySize; i++){
             TA currentTA = availableTAs.ta[i];
             if(time == expectedTimeLimit && currentTA.isStudentWithTA()){
                 expectedTimeLimit +=1;
             }
         }
-        
-        
         
         if(time == currentStudent.timePassed+5){
             for(int i = 0; i < availableTAs.arraySize; i++){
@@ -211,9 +204,7 @@ void Simulation::endTAShift(){
             }
         }
     }
-    //    if(availableTAs.arraySize == 0){
-    //        cout<<formatTime(time)<<"\t"<<"There are no TAs on duty. TA#007 is now closed."<<endl;
-    //    }
+    
 }
 
 void Simulation::sendAllStudentsInLaptopQueueHome(int expectedTimeLimit){
@@ -250,16 +241,21 @@ void Simulation::sendAllStudentsInTAQueueHome(int& expectedTimeLimit){
     }
 }
 
-void Simulation::printDaySummary(int expectedTimeLimit, int num, string day){
+void Simulation::printDaySummary(int expectedTimeLimit, int num, string day, int progNum){
     if(time == expectedTimeLimit){
         cout<<endl;
         int hours = time/60;
         double min = ((double)time/60.0 - (double)hours) * 60;
         cout<<day<<"'s Lab Summary:"<<endl;
         cout<<"The TA Lab was open for "<<hours<<" hours and "<<min<<" minutes."<<endl;
-        cout<<studentDays.dayStudents[num].size<<" students visited the lab. Out of those students, only "<<happy<<" left happy."<<endl;
+        cout<<studentDays[progNum].dayStudents[num].size<<" students visited the lab. Out of those students, only "<<happy<<" left happy."<<endl;
+        if(num == 2){
+            cout<<"NO ONE LIKES WEDNESDAYS"<<endl;
+        }
         cout<<"The remaining left frustrated."<<endl<<endl;
+        
         cout<<"Lesson Learned:  Do not procrastinate!  Start programs early!"<<endl<<endl<<endl;
+
         
     }
     
@@ -267,52 +263,55 @@ void Simulation::printDaySummary(int expectedTimeLimit, int num, string day){
 
 void Simulation::startSimulation(){    
     
-    for(int i =0; i<3; i++){
+    
+    for(int p = 0; p< numberOfProg; p++){
         
-        string day;
-        switch (i) {
-            case 0:
-                day = "Monday";
-                break;
-            case 1:
-                day = "Tuesday";
-                break;
-            default:
-                day = "Wednesday";
-                break;
+        cout<<"**********"<<endl;
+        cout<<"Program "<<p+1<<endl;
+        cout<<"**********"<<endl;
+        
+        for(int i =0; i<3; i++){
+            
+            string day;
+            switch (i) {
+                case 0:
+                    day = "Monday";
+                    break;
+                case 1:
+                    day = "Tuesday";
+                    break;
+                default:
+                    day = "Wednesday";
+                    break;
+            }
+            
+            happy = 0;
+            frustrated = 0;
+            availableTAs.arraySize = 0;
+            availableTAs.ta = new TA[taArray.arraySize];
+            queue<Student> empty;
+            swap(laptopQueue, empty);
+            time = 0;
+            lastTAEndTime = 0;
+            
+            int expectedTimeLimit = 240;
+            cout<<day<<":"<<endl<<endl;
+            
+            for(time = 0; time <= expectedTimeLimit; time++){
+                getAvailableTAs(i);
+                setExpectedLabRunTime(expectedTimeLimit, i);
+                getStudentsInQueue(i, p);
+                assignLaptopToStudent();
+                assignTAToStudent();
+                deassignTAFromStudent(expectedTimeLimit);
+                moveArrivedStudentsToLaptopQueue();
+                assignTAToStudent();
+                sendAllStudentsInLaptopQueueHome(expectedTimeLimit);
+                endTAShift();
+                sendAllStudentsInTAQueueHome(expectedTimeLimit);
+                printDaySummary(expectedTimeLimit, i, day, p);
+            }
+            
         }
-        
-        happy = 0;
-        frustrated = 0;
-        availableTAs.arraySize = 0;
-        availableTAs.ta = new TA[taArray.arraySize];
-        queue<Student> empty;
-        swap(laptopQueue, empty);
-        time = 0;
-        lastTAEndTime = 0;
-        
-        int expectedTimeLimit = 240;
-        cout<<day<<":"<<endl<<endl;
-        
-        for(time = 0; time <= expectedTimeLimit; time++){
-            
-            getAvailableTAs(i);
-            
-            setExpectedLabRunTime(expectedTimeLimit, i);
-            
-            getStudentsInQueue(i);
-            
-            assignLaptopToStudent();
-            assignTAToStudent();
-            deassignTAFromStudent(expectedTimeLimit);
-            moveArrivedStudentsToLaptopQueue();
-            assignTAToStudent();
-            sendAllStudentsInLaptopQueueHome(expectedTimeLimit);
-            endTAShift();
-            sendAllStudentsInTAQueueHome(expectedTimeLimit);
-            printDaySummary(expectedTimeLimit, i, day);
-            
-        }
-        
     }
 };

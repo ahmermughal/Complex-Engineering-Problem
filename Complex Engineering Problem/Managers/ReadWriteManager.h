@@ -22,17 +22,17 @@ using namespace std;
 
 class ReadWriteManager{
 private:
-    int numberOfPrograms;
     stack<int> readLaptopStack(ifstream& inFile);
     void readTAArray(ifstream& inFile);
     Student* readStudentArray(ifstream& inFile, int& size);
     
 public:
     ReadWriteManager();
-    StudentDays studentDays;
+    StudentDays* studentDays;
     stack<int> laptopStack;
     TAArray taArray;
     void readFromFile();
+    int numberOfPrograms;
 
 };
 

@@ -21,18 +21,19 @@ using namespace std;
 
 class Simulation{
 private:
-    StudentDays studentDays;
+    StudentDays* studentDays;
     TAArray taArray;
     TAArray availableTAs;
     stack<int> laptopStack;
     queue<Student> laptopQueue;
     queue<Student> taQueue;
+    int numberOfProg;
     int time;
     int lastTAEndTime;
     int happy;
     int frustrated;
     queue<Student> studentQueue;
-    void getStudentsInQueue(int num);
+    void getStudentsInQueue(int num, int progNum);
     void getAvailableTAs(int num);
     void moveArrivedStudentsToLaptopQueue();
     void assignLaptopToStudent();
@@ -43,10 +44,10 @@ private:
     void sendAllStudentsInLaptopQueueHome(int expectedTimeLimit);
     void sendAllStudentsInTAQueueHome(int& expectedTimeLimit);
     void deassignTAFromStudent(int& expectedTimeLimit);
-    void printDaySummary(int expectedTimeLimit, int num, string day);
+    void printDaySummary(int expectedTimeLimit, int num, string day, int progNum);
     
 public:
-    Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas);
+    Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, int numberOfPrograms);
     void startSimulation();
    
 

@@ -125,19 +125,31 @@ void ReadWriteManager::readFromFile(){
     }
     int size = 0;
 
+    studentDays = new StudentDays[numberOfPrograms];
+    
     // get all Monday Students
-    studentDays.dayStudents = new StudentsPerDay[3];
-    studentDays.dayStudents[0].students = readStudentArray(inFile, size);
-    studentDays.dayStudents[0].size = size;       
+    studentDays[0].dayStudents = new StudentsPerDay[3];
+    studentDays[0].dayStudents[0].students = readStudentArray(inFile, size);
+    studentDays[0].dayStudents[0].size = size;
     
     // get all Tuesday Students
-    studentDays.dayStudents[1].students = readStudentArray(inFile, size);
-    studentDays.dayStudents[1].size = size;
-    //cout<<"Tues Student Size: "<<studentDays.tuesdayStudents.size<<endl;
+    studentDays[0].dayStudents[1].students = readStudentArray(inFile, size);
+    studentDays[0].dayStudents[1].size = size;
     
     // get All Wednesday Students;
-    studentDays.dayStudents[2].students = readStudentArray(inFile, size);
-    studentDays.dayStudents[2].size = size;
-    //cout<<"Wed Student Size: "<<studentDays.wednesdayStudents.size<<endl;
+    studentDays[0].dayStudents[2].students = readStudentArray(inFile, size);
+    studentDays[0].dayStudents[2].size = size;
+
+    studentDays[1].dayStudents = new StudentsPerDay[3];
+    studentDays[1].dayStudents[0].students = readStudentArray(inFile, size);
+    studentDays[1].dayStudents[0].size = size;
+
+    // get all Tuesday Students
+    studentDays[1].dayStudents[1].students = readStudentArray(inFile, size);
+    studentDays[1].dayStudents[1].size = size;
+
+    // get All Wednesday Students;
+    studentDays[1].dayStudents[2].students = readStudentArray(inFile, size);
+    studentDays[1].dayStudents[2].size = size;
     
 }

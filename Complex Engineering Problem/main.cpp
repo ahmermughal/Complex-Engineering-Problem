@@ -15,15 +15,14 @@ ReadWriteManager readWriteManager;
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
-    StudentDays studentDays;
+    StudentDays* studentDays;
     stack<int> laptopStack;
     readWriteManager.readFromFile();
     studentDays = readWriteManager.studentDays;
     laptopStack = readWriteManager.laptopStack;
-    Simulation simulation(studentDays, laptopStack, readWriteManager.taArray);
+    Simulation simulation(studentDays, laptopStack, readWriteManager.taArray, readWriteManager.numberOfPrograms);
     
-    //simulation.assignLaptopToStudent();
-    //simulation.addStudentsToLaptopQueue();
+
     simulation.startSimulation();
     
 //    mondayStudentArr = readWriteManager.mondayStudentArray;
