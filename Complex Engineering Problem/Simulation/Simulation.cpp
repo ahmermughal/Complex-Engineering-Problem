@@ -287,12 +287,7 @@ void Simulation::startSimulation(){
             
             happy = 0;
             frustrated = 0;
-            availableTAs.arraySize = 0;
-            availableTAs.ta = new TA[taArray.arraySize];
-            queue<Student> empty;
-            swap(laptopQueue, empty);
-            time = 0;
-            lastTAEndTime = 0;
+
             
             int expectedTimeLimit = 240;
             cout<<day<<":"<<endl<<endl;
