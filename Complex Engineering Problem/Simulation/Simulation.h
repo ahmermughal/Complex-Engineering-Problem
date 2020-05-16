@@ -23,19 +23,31 @@ class Simulation{
 private:
     StudentDays studentDays;
     TAArray taArray;
+    TAArray availableTAs;
     stack<int> laptopStack;
     queue<Student> laptopQueue;
     queue<Student> taQueue;
+    int time;
+    queue<Student> studentQueue;
+
     
 public:
     Simulation(StudentDays studentD, stack<int> laptopS, TAArray tas);
+    //void assignLaptopToStudent();
+//    void addStudentsToLaptopQueue();
+//    void addStudentToTAQueue(Student student);
+//    void assignStudentToTA(Student student, int taIndex);
+//    void assigningStudentToTAQueue(Student student);
+//    void deassignStudentFromTA(Student student, int taIndex);
+//    void deassignLaptopFromStudent(Student student);
+//    
+    void startSimulation();
+    void getAvailableTAs();
+    void getStudentsInQueue();
+    void moveArrivedStudentsToLaptopQueue();
     void assignLaptopToStudent();
-    void addStudentsToLaptopQueue();
-    void addStudentToTAQueue(Student student);
-    void assignStudentToTA(Student student, int taIndex);
-    void assigningStudentToTAQueue(Student student);
-    void deassignStudentFromTA(Student student, int taIndex);
-    void deassignLaptopFromStudent(Student student);
+    void assignTAToStudent();
+    void deassignTAFromStudent();
 };
 
 

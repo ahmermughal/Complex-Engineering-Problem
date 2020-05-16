@@ -63,8 +63,8 @@ void ReadWriteManager::readTAArray(ifstream& inFile){
             taArray.ta[i].endTimes[2] = stoi(nextItem);
         }
         
-        //cout<<"Size of TA Array: "<<numberOfTA<< endl;
-
+//        cout<<"Size of TA Array: "<<numberOfTA<< endl;
+//
 //        for(int i = 0; i < numberOfTA; i++){
 //            cout<<taArray.ta[i].name<< endl;
 //        }
@@ -81,7 +81,8 @@ Student* ReadWriteManager::readStudentArray(ifstream& inFile, int& size){
         for(int i = 0; i < numberOfStudent; i++){
             inFile >> nextItem;
             studentArr[i].enterTime = stoi(nextItem);
-
+            studentArr[i].timePassed = studentArr[i].enterTime;
+            
             inFile >> nextItem;
             studentArr[i].firstName = nextItem;
 
@@ -130,13 +131,13 @@ void ReadWriteManager::readFromFile(){
     //cout<<"Monday Student Size: "<<studentDays.mondayStudents.size<<endl;
     
     // get all Tuesday Students
-    studentDays.tuesdayStudents.students = readStudentArray(inFile, size);
-    studentDays.tuesdayStudents.size = size;
+    //studentDays.tuesdayStudents.students = readStudentArray(inFile, size);
+    //studentDays.tuesdayStudents.size = size;
     //cout<<"Tues Student Size: "<<studentDays.tuesdayStudents.size<<endl;
     
     // get All Wednesday Students;
-    studentDays.wednesdayStudents.students = readStudentArray(inFile, size);
-    studentDays.wednesdayStudents.size = size;
+    //studentDays.wednesdayStudents.students = readStudentArray(inFile, size);
+    //studentDays.wednesdayStudents.size = size;
     //cout<<"Wed Student Size: "<<studentDays.wednesdayStudents.size<<endl;
     
 }

@@ -17,9 +17,9 @@ typedef struct DataStructuresStudent {
     string lastName;
     int enterTime;
     int numQuestions;
-    int numAnswered;
+    int numAnswered = 0;
     int laptopSerialNum;
-    int timePassedInLab;
+    int timePassed;
     bool withTA = false;
 } Student;
 

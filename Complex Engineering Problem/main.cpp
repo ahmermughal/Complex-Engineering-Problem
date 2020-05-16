@@ -23,8 +23,8 @@ int main(int argc, const char * argv[]) {
     Simulation simulation(studentDays, laptopStack, readWriteManager.taArray);
     
     //simulation.assignLaptopToStudent();
-    simulation.addStudentsToLaptopQueue();
-
+    //simulation.addStudentsToLaptopQueue();
+    simulation.startSimulation();
     
 //    mondayStudentArr = readWriteManager.mondayStudentArray;
 //    
