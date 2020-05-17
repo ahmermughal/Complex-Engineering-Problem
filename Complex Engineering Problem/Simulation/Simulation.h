@@ -18,7 +18,7 @@
 #include "TA.h"
 #include "TAsPerDay.h"
 using namespace std;
-
+// This class is used to run the simulation from the given data
 class Simulation{
 private:
     StudentDays* studentDays;
@@ -33,12 +33,12 @@ private:
     int happy;
     int frustrated;
     queue<Student> studentQueue;
+    
     void getStudentsInQueue(int num, int progNum);
     void getAvailableTAs(int num);
     void moveArrivedStudentsToLaptopQueue();
     void assignLaptopToStudent();
     void assignTAToStudent();
-
     void setExpectedLabRunTime(int& expectedRunTime, int num);
     void endTAShift();
     void sendAllStudentsInLaptopQueueHome(int expectedTimeLimit);
@@ -49,8 +49,6 @@ private:
 public:
     Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, int numberOfPrograms);
     void startSimulation();
-   
-
 };
 
 

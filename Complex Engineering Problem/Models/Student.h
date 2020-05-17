@@ -10,7 +10,7 @@
 #define Student_h
 #include <stdio.h>
 #include <string>
-
+// Struct that defines what a student contains
 using namespace std;
 typedef struct DataStructuresStudent {
     string firstName;

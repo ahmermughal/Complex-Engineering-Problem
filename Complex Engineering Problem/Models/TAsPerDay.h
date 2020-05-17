@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string>
 #include "TA.h"
-
+// Struct which contains an array of TAs and the size of that array
 typedef struct TAsPerDay {
     TA* ta;
     int arraySize;

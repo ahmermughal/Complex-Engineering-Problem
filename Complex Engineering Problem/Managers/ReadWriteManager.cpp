@@ -8,9 +8,12 @@
 
 #include "ReadWriteManager.h"
 
+// This class is used to manage the IO of the simulation
+// Reading from the file to get the data
 ReadWriteManager::ReadWriteManager(){
     
 }
+// function reads the laptops from the file and returns a stack.
 // passing by refence to make code more modular and easy to modify
 stack<int> ReadWriteManager::readLaptopStack(ifstream& inFile){
     string nextItem;
@@ -24,25 +27,22 @@ stack<int> ReadWriteManager::readLaptopStack(ifstream& inFile){
             inFile >> nextItem;
             laptopStack.push(stoi(nextItem));
         }
-        //cout<<"Size Of Laptop Stack: "<<laptopStack.size()<<endl;
     }
     return laptopStack;
 }
 
+// function reads TAs from the file and saved them in an object TAArray
 void ReadWriteManager::readTAArray(ifstream& inFile){
     string nextItem;
     
     if(inFile>>nextItem){
         int numberOfTA = stoi(nextItem);
-        //cout<<numberOfTA<<endl;
         taArray.arraySize =numberOfTA;
         taArray.ta = new TA[numberOfTA];
-        //TA taArr[numberOfTA];
         
         for(int i = 0; i < numberOfTA; i++){
             inFile >> nextItem;
             taArray.ta[i].name = nextItem;
-            //cout<<taArr[i].name<<endl;
             
             inFile >> nextItem;
             taArray.ta[i].startTimes[0] = stoi(nextItem);
@@ -63,14 +63,9 @@ void ReadWriteManager::readTAArray(ifstream& inFile){
             taArray.ta[i].endTimes[2] = stoi(nextItem);
         }
         
-//        cout<<"Size of TA Array: "<<numberOfTA<< endl;
-//
-//        for(int i = 0; i < numberOfTA; i++){
-//            cout<<taArray.ta[i].name<< endl;
-//        }
     }
 }
-
+// Function takes in two parameters to read students from the file and return a student array
 Student* ReadWriteManager::readStudentArray(ifstream& inFile, int& size){
     string nextItem;
     
@@ -93,14 +88,6 @@ Student* ReadWriteManager::readStudentArray(ifstream& inFile, int& size){
             studentArr[i].numQuestions = stoi(nextItem);
         }
         
-//        for(int i = 0; i < numberOfStudent; i++){
-//            cout<<"Enter Time: "<<studentArr[i].enterTime<< endl;
-//            cout<<"First Name: "<<studentArr[i].firstName<< endl;
-//            cout<<"Last Name: "<<studentArr[i].lastName<< endl;
-//            cout<<"Number Of Questions: "<<studentArr[i].numQuestions<< endl;
-//            cout<<"\t ------------------- \n";
-//        }
-//        cout<<"Next Day \n\n\n";
         size = numberOfStudent;
         return studentArr;
     }
@@ -113,7 +100,6 @@ void ReadWriteManager::readFromFile(){
     
     // get all the laptop stack
     laptopStack = readLaptopStack(inFile);
-    //cout<<"Size Of Laptop Stack: "<<laptopStack.size()<<endl;
 
     // get all the TA
     readTAArray(inFile);
@@ -123,8 +109,8 @@ void ReadWriteManager::readFromFile(){
     if(inFile >> nextItem){
         numberOfPrograms = stoi(nextItem);
     }
+    
     int size = 0;
-
     studentDays = new StudentDays[numberOfPrograms];
     
     // get all Monday Students

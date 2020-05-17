@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string>
 #include "Student.h"
-
+// Struct contains an array of students and the size of that array
 typedef struct StudentsPerDay {
     Student* students;
     int size;          

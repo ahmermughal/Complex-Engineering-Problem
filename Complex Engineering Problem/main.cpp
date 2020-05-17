@@ -14,7 +14,7 @@ ReadWriteManager readWriteManager;
 
 using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
+
     StudentDays* studentDays;
     stack<int> laptopStack;
     readWriteManager.readFromFile();
@@ -22,20 +22,8 @@ int main(int argc, const char * argv[]) {
     laptopStack = readWriteManager.laptopStack;
     Simulation simulation(studentDays, laptopStack, readWriteManager.taArray, readWriteManager.numberOfPrograms);
     
-
+    // start the simulation
     simulation.startSimulation();
-    
-//    mondayStudentArr = readWriteManager.mondayStudentArray;
-//    
-//    for(int i = 0; i < 9; i++){
-//        cout<<"Enter Time: "<<mondayStudentArr[i].enterTime<< endl;
-//        cout<<"First Name: "<<mondayStudentArr[i].firstName<< endl;
-//        cout<<"Last Name: "<<mondayStudentArr[i].lastName<< endl;
-//        cout<<"Number Of Questions: "<<mondayStudentArr[i].numQuestions<< endl;
-//        cout<<"\t ------------------- \n";
-//    }
-    
-    
-    
+
     return 0;
 }

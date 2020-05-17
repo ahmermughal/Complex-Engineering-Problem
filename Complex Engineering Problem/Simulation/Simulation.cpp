@@ -7,7 +7,7 @@
 //
 
 #include "Simulation.h"
-
+// Constructor
 Simulation::Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, int numberOfPrograms){
     studentDays = studentD;
     laptopStack = laptopS;
@@ -17,16 +17,14 @@ Simulation::Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, i
     time = 0;
     lastTAEndTime = 0;
     numberOfProg = numberOfPrograms;
-    
 }
 
-
+// This functions prints formatted time by the numbers given
+// time = 0 is 12:00 PM
 string formatTime(int time)
 {
-    
     int hour = 0, min = 0;
     string formattedTime = "", h, m;
-    
     if (time != 0){
         if (time < 60)
         {
@@ -60,7 +58,6 @@ string formatTime(int time)
     }else{
         m = to_string(min);
     }
-    
     if (min == 0){
         formattedTime= h+ ":00" + " PM:";
     }else{
@@ -84,10 +81,10 @@ void Simulation::getAvailableTAs(int num){
         }
     }
 };
-
+// get all student from array and fill in a queue.
+// students can then easily be poped from the front instead of keeping track of the position in an array
 void Simulation::getStudentsInQueue(int num, int progNum){
     StudentsPerDay dayStudents = studentDays[progNum].dayStudents[num];
-    // get all student and fill in a queue.
     if(time == 0){
         queue<Student> empty;
         swap(studentQueue, empty);
@@ -97,7 +94,7 @@ void Simulation::getStudentsInQueue(int num, int progNum){
         }
     }
 }
-
+// Function moves student to the laptop queue from the main queue.
 void Simulation::moveArrivedStudentsToLaptopQueue(){
     if(!studentQueue.empty()){
         Student currentStudent = studentQueue.front();
@@ -110,13 +107,13 @@ void Simulation::moveArrivedStudentsToLaptopQueue(){
     }
 }
 
+// assign laptop To Student
 void Simulation::assignLaptopToStudent(){
-    // assign laptop To Student
     if(time < lastTAEndTime){
         if(!laptopQueue.empty()){
             Student currentStudent = laptopQueue.front();
             
-            if(time == currentStudent.timePassed+2){
+            if(time == currentStudent.timePassed+2){ // checks and sees if two mins have passed.
                 currentStudent.laptopSerialNum = laptopStack.top();
                 laptopStack.pop();
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has borrowed laptop "<<currentStudent.laptopSerialNum<<" and moved to TA line"<<endl;
@@ -129,6 +126,7 @@ void Simulation::assignLaptopToStudent(){
     }
 }
 
+// assign TAs to students depending on if the TA is free.
 void Simulation::assignTAToStudent(){
     if(!taQueue.empty()){
         Student currentStudent = taQueue.front();
@@ -146,11 +144,12 @@ void Simulation::assignTAToStudent(){
         }
     }
 }
-
+// deassign students from TA if their time is up
 void Simulation::deassignTAFromStudent(int& expectedTimeLimit){
     if(!taQueue.empty()){
         Student currentStudent = taQueue.front();
         
+        // adds more time to the lab end time if the current TA is with a student so their session can end.
         for(int i = 0; i < availableTAs.arraySize; i++){
             TA currentTA = availableTAs.ta[i];
             if(time == expectedTimeLimit && currentTA.isStudentWithTA()){
@@ -168,10 +167,12 @@ void Simulation::deassignTAFromStudent(int& expectedTimeLimit){
             taQueue.pop();
             currentStudent.numAnswered +=1;
             currentStudent.timePassed += 5 ;
+            // if student has more questions then move student back in queue
             if(currentStudent.numQuestions > currentStudent.numAnswered){
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has one more question answered and gotten back in line."<<endl;
                 taQueue.push(currentStudent);
-            }else{
+            }else{// if student is done with question then student goes home
+                // giving the laptop back to the stack.
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has returned laptop "<<currentStudent.laptopSerialNum<<" and went home "<<"Happy"<<endl;
                 laptopStack.push(currentStudent.laptopSerialNum);
                 happy +=1;
@@ -180,6 +181,7 @@ void Simulation::deassignTAFromStudent(int& expectedTimeLimit){
     }
 }
 
+// set the lab run time based on the TA that leaves the lab the last.
 void Simulation::setExpectedLabRunTime(int& expectedRunTime, int num){
     if(time == 0){
         int maxTime = 0;
@@ -190,7 +192,7 @@ void Simulation::setExpectedLabRunTime(int& expectedRunTime, int num){
         lastTAEndTime = maxTime;
     }
 }
-
+// ends TAs shift when it is over
 void Simulation::endTAShift(){
     if(availableTAs.arraySize != 0){
         for(int i=0; i<availableTAs.arraySize; i++){
@@ -206,7 +208,7 @@ void Simulation::endTAShift(){
     }
     
 }
-
+// When Lab time is over and there are students left in the laptop queue they go home.
 void Simulation::sendAllStudentsInLaptopQueueHome(int expectedTimeLimit){
     if(time == expectedTimeLimit){
         if(laptopQueue.size() > 0){
@@ -218,7 +220,8 @@ void Simulation::sendAllStudentsInLaptopQueueHome(int expectedTimeLimit){
         }
     }
 }
-
+// if lab time is over send students home
+// checks to see if 75% of their questions are answered
 void Simulation::sendAllStudentsInTAQueueHome(int& expectedTimeLimit){
     if(time == expectedTimeLimit){
         if(taQueue.size() > 0){
@@ -241,6 +244,7 @@ void Simulation::sendAllStudentsInTAQueueHome(int& expectedTimeLimit){
     }
 }
 
+// prints the summary of the day.
 void Simulation::printDaySummary(int expectedTimeLimit, int num, string day, int progNum){
     if(time == expectedTimeLimit){
         cout<<endl;
@@ -261,15 +265,18 @@ void Simulation::printDaySummary(int expectedTimeLimit, int num, string day, int
     
 }
 
-void Simulation::startSimulation(){    
+// starts the simulation
+void Simulation::startSimulation(){
     
-    
+    // loop to run for the number of programs
     for(int p = 0; p< numberOfProg; p++){
         
         cout<<"**********"<<endl;
         cout<<"Program "<<p+1<<endl;
         cout<<"**********"<<endl;
         
+        // loop to run for number of days
+        // hardcoded 3 as three days are mentioned in the Problem Statement.
         for(int i =0; i<3; i++){
             
             string day;
@@ -287,11 +294,12 @@ void Simulation::startSimulation(){
             
             happy = 0;
             frustrated = 0;
-
-            
+            // sets a default limit to lab time
             int expectedTimeLimit = 240;
             cout<<day<<":"<<endl<<endl;
             
+            // lab running from 0 = 12:00
+            // end of the lab timing when the last TA's shift gets over.
             for(time = 0; time <= expectedTimeLimit; time++){
                 getAvailableTAs(i);
                 setExpectedLabRunTime(expectedTimeLimit, i);
@@ -305,8 +313,7 @@ void Simulation::startSimulation(){
                 endTAShift();
                 sendAllStudentsInTAQueueHome(expectedTimeLimit);
                 printDaySummary(expectedTimeLimit, i, day, p);
-            }
-            
+            }            
         }
     }
 };

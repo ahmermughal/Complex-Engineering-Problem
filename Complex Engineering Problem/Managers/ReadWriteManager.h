@@ -19,7 +19,8 @@
 #include "StudentDays.h"
 #include "TAsPerDay.h"
 using namespace std;
-
+// This class is used to manage the IO of the simulation
+// Reading from the file to get the data
 class ReadWriteManager{
 private:
     stack<int> readLaptopStack(ifstream& inFile);
@@ -33,7 +34,6 @@ public:
     TAArray taArray;
     void readFromFile();
     int numberOfPrograms;
-
 };
 
 #endif /* ReadWriteManager_h */
