@@ -25,5 +25,7 @@ int main(int argc, const char * argv[]) {
     // start the simulation
     simulation.startSimulation();
 
+    readWriteManager.writeToFile(simulation.outputStrings);
+    
     return 0;
 }

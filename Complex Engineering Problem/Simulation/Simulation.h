@@ -17,6 +17,7 @@
 #include "Student.h"
 #include "TA.h"
 #include "TAsPerDay.h"
+#include "cmath"
 using namespace std;
 // This class is used to run the simulation from the given data
 class Simulation{
@@ -47,6 +48,8 @@ private:
     void printDaySummary(int expectedTimeLimit, int num, string day, int progNum);
     
 public:
+    queue<string> outputStrings;
+
     Simulation(StudentDays* studentD, stack<int> laptopS, TAArray tas, int numberOfPrograms);
     void startSimulation();
 };

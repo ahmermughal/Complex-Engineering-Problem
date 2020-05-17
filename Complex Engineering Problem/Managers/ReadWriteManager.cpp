@@ -94,6 +94,21 @@ Student* ReadWriteManager::readStudentArray(ifstream& inFile, int& size){
     return nullptr;
 }
 
+void ReadWriteManager::writeToFile(queue<string> outputStrings){
+    
+    ofstream outFile("out.txt");
+    
+    while(!outputStrings.empty()){
+        string outputStr = outputStrings.front();
+        outputStrings.pop();
+        outFile<<outputStr;
+    }
+    
+    outFile.close();
+    
+        
+}
+
 void ReadWriteManager::readFromFile(){
     string fileName = "input.txt";
     ifstream inFile(fileName);

@@ -76,6 +76,8 @@ void Simulation::getAvailableTAs(int num){
                     availableTAs.arraySize += 1;
                     availableTAs.ta[i] = taArray.ta[i];
                     cout<< formatTime(time) <<"\t"<<availableTAs.ta[i].name<<" has began lab hours"<<endl;
+                    string output = formatTime(time)+"\t"+availableTAs.ta[i].name+" has began lab hours\n";
+                    outputStrings.push(output);
                 }
             }
         }
@@ -100,6 +102,8 @@ void Simulation::moveArrivedStudentsToLaptopQueue(){
         Student currentStudent = studentQueue.front();
         if(currentStudent.enterTime == time){
             cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" "<<" has arrived in TA#007"<<endl;
+            string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" "+" has arrived in TA#007\n";
+            outputStrings.push(output);
             studentQueue.pop();// if student has arrived then remove from student queue.
             // add student to laptop queue
             laptopQueue.push(currentStudent);
@@ -117,6 +121,10 @@ void Simulation::assignLaptopToStudent(){
                 currentStudent.laptopSerialNum = laptopStack.top();
                 laptopStack.pop();
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has borrowed laptop "<<currentStudent.laptopSerialNum<<" and moved to TA line"<<endl;
+                
+                string output = formatTime(time) + "\t" + currentStudent.firstName + " " + currentStudent.lastName + " has borrowed laptop " + to_string(currentStudent.laptopSerialNum) + " and moved to TA line\n";
+                outputStrings.push(output);
+
                 currentStudent.timePassed += 2;
                 laptopQueue.pop();
                 // add student to TA queue
@@ -140,6 +148,10 @@ void Simulation::assignTAToStudent(){
                 // assigned current time to current student so student can be deassigned from TA
                 taQueue.front().timePassed = time;
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" is getting help from "<<freeTA.name<<endl;
+                
+                string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" is getting help from "+freeTA.name+"\n";
+                 outputStrings.push(output);
+                
             }
         }
     }
@@ -171,11 +183,18 @@ void Simulation::deassignTAFromStudent(int& expectedTimeLimit){
             if(currentStudent.numQuestions > currentStudent.numAnswered){
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has one more question answered and gotten back in line."<<endl;
                 taQueue.push(currentStudent);
+                
+                string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" has one more question answered and gotten back in line.\n";
+                 outputStrings.push(output);
+                
             }else{// if student is done with question then student goes home
                 // giving the laptop back to the stack.
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has returned laptop "<<currentStudent.laptopSerialNum<<" and went home "<<"Happy"<<endl;
                 laptopStack.push(currentStudent.laptopSerialNum);
                 happy +=1;
+                
+                string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" has returned laptop "+to_string(currentStudent.laptopSerialNum)+" and went home Happy\n";
+                 outputStrings.push(output);
             }
         }
     }
@@ -199,7 +218,10 @@ void Simulation::endTAShift(){
             if(time == availableTAs.ta[i].endTimes[0]){
                 // time for TA to leave
                 availableTAs.arraySize -=1;
-                cout<<formatTime(time)<<"\t"<<availableTAs.ta[i].name<<" has  finished lab hours."<<endl;
+                cout<<formatTime(time)<<"\t"<<availableTAs.ta[i].name<<" has finished lab hours."<<endl;
+                
+                string output = formatTime(time)+"\t"+availableTAs.ta[i].name+" has finished lab hours.\n";
+                 outputStrings.push(output);
                 if(i == 0){
                     availableTAs.ta[0] = availableTAs.ta[1];
                 }
@@ -216,6 +238,9 @@ void Simulation::sendAllStudentsInLaptopQueueHome(int expectedTimeLimit){
                 Student currentStudent = laptopQueue.front();
                 laptopQueue.pop();
                 cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" never even got a laptop and went home FRUSTRATED."<<endl;
+                
+                string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" never even got a laptop and went home FRUSTRATED.\n";
+                 outputStrings.push(output);
             }
         }
     }
@@ -229,7 +254,6 @@ void Simulation::sendAllStudentsInTAQueueHome(int& expectedTimeLimit){
             string mood;
             double num = ((double)currentStudent.numQuestions * 0.75) ;
             double numOfQAnswered = (double) currentStudent.numAnswered;
-            //cout<<currentStudent.firstName<<" "<<currentStudent.lastName<<" got "<<numOfQAnswered<<" answered but needed "<<num<<" to be happy"<<endl<<endl;
             if(numOfQAnswered >= num){
                 mood = "HAPPY.";
                 happy +=1;
@@ -238,6 +262,10 @@ void Simulation::sendAllStudentsInTAQueueHome(int& expectedTimeLimit){
                 frustrated += 1;
             }
             cout<<formatTime(time)<<"\t"<<currentStudent.firstName<<" "<<currentStudent.lastName<<" has returned laptop "<<currentStudent.laptopSerialNum<<" and went home "<<mood<<endl;
+            
+            string output = formatTime(time)+"\t"+currentStudent.firstName+" "+currentStudent.lastName+" has returned laptop "+ to_string(currentStudent.laptopSerialNum) +" and went home "+mood+"\n";
+             outputStrings.push(output);
+            
             expectedTimeLimit = time+1;
             taQueue.pop();
         }
@@ -251,16 +279,32 @@ void Simulation::printDaySummary(int expectedTimeLimit, int num, string day, int
         int hours = time/60;
         double min = ((double)time/60.0 - (double)hours) * 60;
         cout<<day<<"'s Lab Summary:"<<endl;
-        cout<<"The TA Lab was open for "<<hours<<" hours and "<<min<<" minutes."<<endl;
+        
+        string output = "\n"+day+"'s Lab Summary:\n";
+          outputStrings.push(output);
+        
+        cout<<"The TA Lab was open for "<<hours<<" hours and "<<round(min)<<" minutes."<<endl;
+        
+        //min = min + 0.5 - (min<0);
+        output = "The TA Lab was open for "+to_string(hours)+" hours and "+to_string((int)round(min))+" minutes.\n";
+          outputStrings.push(output);
+        
         cout<<studentDays[progNum].dayStudents[num].size<<" students visited the lab. Out of those students, only "<<happy<<" left happy."<<endl;
+        output = to_string(studentDays[progNum].dayStudents[num].size)+" students visited the lab. Out of those students, only "+ to_string(happy) +" left happy.\n";
+          outputStrings.push(output);
+        
         if(num == 2){
             cout<<"NO ONE LIKES WEDNESDAYS"<<endl;
+            output = "NO ONE LIKES WEDNESDAYS\n";
+              outputStrings.push(output);
         }
         cout<<"The remaining left frustrated."<<endl<<endl;
+        output = "The remaining left frustrated.\n\n";
+          outputStrings.push(output);
         
         cout<<"Lesson Learned:  Do not procrastinate!  Start programs early!"<<endl<<endl<<endl;
-
-        
+        output = "Lesson Learned:  Do not procrastinate!  Start programs early!\n\n\n";
+          outputStrings.push(output);
     }
     
 }
@@ -274,6 +318,13 @@ void Simulation::startSimulation(){
         cout<<"**********"<<endl;
         cout<<"Program "<<p+1<<endl;
         cout<<"**********"<<endl;
+        
+        string output = "**********\n";
+          outputStrings.push(output);
+        output = "Program "+to_string((p+1))+"\n";
+          outputStrings.push(output);
+        output = "**********\n";
+          outputStrings.push(output);
         
         // loop to run for number of days
         // hardcoded 3 as three days are mentioned in the Problem Statement.
@@ -297,6 +348,8 @@ void Simulation::startSimulation(){
             // sets a default limit to lab time
             int expectedTimeLimit = 240;
             cout<<day<<":"<<endl<<endl;
+            output = day+":\n\n";
+            outputStrings.push(output);
             
             // lab running from 0 = 12:00
             // end of the lab timing when the last TA's shift gets over.

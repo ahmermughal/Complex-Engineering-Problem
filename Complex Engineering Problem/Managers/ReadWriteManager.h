@@ -14,6 +14,7 @@
 #include <iostream>
 #include <fstream>
 #include <stack>
+#include <queue>
 #include <cstdlib>
 #include "TA.h"
 #include "StudentDays.h"
@@ -34,6 +35,7 @@ public:
     TAArray taArray;
     void readFromFile();
     int numberOfPrograms;
+    void writeToFile(queue<string> outputStrings);
 };
 
 #endif /* ReadWriteManager_h */
