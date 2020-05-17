@@ -93,7 +93,8 @@ Student* ReadWriteManager::readStudentArray(ifstream& inFile, int& size){
     }
     return nullptr;
 }
-
+// gets a queue of string as parameters
+// using ofstream writes the data to a text file.
 void ReadWriteManager::writeToFile(queue<string> outputStrings){
     
     ofstream outFile("out.txt");
@@ -152,5 +153,7 @@ void ReadWriteManager::readFromFile(){
     // get All Wednesday Students;
     studentDays[1].dayStudents[2].students = readStudentArray(inFile, size);
     studentDays[1].dayStudents[2].size = size;
+    
+    inFile.close();
     
 }

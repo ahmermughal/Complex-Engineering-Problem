@@ -22,6 +22,7 @@
 using namespace std;
 // This class is used to manage the IO of the simulation
 // Reading from the file to get the data
+// Writing back to the file
 class ReadWriteManager{
 private:
     stack<int> readLaptopStack(ifstream& inFile);
