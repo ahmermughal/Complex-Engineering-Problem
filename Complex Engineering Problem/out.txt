@@ -1,0 +1,654 @@
+**********
+Program 1
+**********
+Monday:
+
+12:00 PM:	Charles has began lab hours
+12:00 PM:	Sooraya Qadir  has arrived in TA#007
+12:02 PM:	Sooraya Qadir has borrowed laptop 23662766 and moved to TA line
+12:02 PM:	Sooraya Qadir is getting help from Charles
+12:07 PM:	Sooraya Qadir has one more question answered and gotten back in line.
+12:07 PM:	Sooraya Qadir is getting help from Charles
+12:11 PM:	Alisa Tager  has arrived in TA#007
+12:12 PM:	Sooraya Qadir has one more question answered and gotten back in line.
+12:12 PM:	Sooraya Qadir is getting help from Charles
+12:13 PM:	Alisa Tager has borrowed laptop 70571329 and moved to TA line
+12:17 PM:	Sooraya Qadir has one more question answered and gotten back in line.
+12:17 PM:	Selene Gallio  has arrived in TA#007
+12:17 PM:	Alisa Tager is getting help from Charles
+12:19 PM:	Selene Gallio has borrowed laptop 46933604 and moved to TA line
+12:22 PM:	Alisa Tager has one more question answered and gotten back in line.
+12:22 PM:	Sooraya Qadir is getting help from Charles
+12:27 PM:	Sooraya Qadir has one more question answered and gotten back in line.
+12:27 PM:	Selene Gallio is getting help from Charles
+12:32 PM:	Selene Gallio has one more question answered and gotten back in line.
+12:32 PM:	Alisa Tager is getting help from Charles
+12:37 PM:	Alisa Tager has one more question answered and gotten back in line.
+12:37 PM:	Sooraya Qadir is getting help from Charles
+12:42 PM:	Sooraya Qadir has returned laptop 23662766 and went home Happy
+12:42 PM:	Selene Gallio is getting help from Charles
+12:47 PM:	Selene Gallio has one more question answered and gotten back in line.
+12:47 PM:	Alisa Tager is getting help from Charles
+12:49 PM:	Rita Wayword  has arrived in TA#007
+12:51 PM:	Rita Wayword has borrowed laptop 23662766 and moved to TA line
+12:52 PM:	Alisa Tager has one more question answered and gotten back in line.
+12:52 PM:	Selene Gallio is getting help from Charles
+12:57 PM:	Selene Gallio has one more question answered and gotten back in line.
+12:57 PM:	Rita Wayword is getting help from Charles
+01:02 PM:	Rita Wayword has one more question answered and gotten back in line.
+01:02 PM:	Alisa Tager is getting help from Charles
+01:07 PM:	Alisa Tager has one more question answered and gotten back in line.
+01:07 PM:	Selene Gallio is getting help from Charles
+01:12 PM:	Selene Gallio has returned laptop 46933604 and went home Happy
+01:12 PM:	Rita Wayword is getting help from Charles
+01:17 PM:	Rita Wayword has one more question answered and gotten back in line.
+01:17 PM:	Alisa Tager is getting help from Charles
+01:22 PM:	Alisa Tager has one more question answered and gotten back in line.
+01:22 PM:	Rita Wayword is getting help from Charles
+01:27 PM:	Rita Wayword has one more question answered and gotten back in line.
+01:27 PM:	Alisa Tager is getting help from Charles
+01:32 PM:	Alisa Tager has returned laptop 70571329 and went home Happy
+01:32 PM:	Rita Wayword is getting help from Charles
+01:37 PM:	Rita Wayword has one more question answered and gotten back in line.
+01:37 PM:	Rita Wayword is getting help from Charles
+01:42 PM:	Rita Wayword has one more question answered and gotten back in line.
+01:42 PM:	Rita Wayword is getting help from Charles
+01:46 PM:	Cecilia Reyes  has arrived in TA#007
+01:47 PM:	Rita Wayword has returned laptop 23662766 and went home Happy
+01:48 PM:	Cecilia Reyes has borrowed laptop 23662766 and moved to TA line
+01:48 PM:	Cecilia Reyes is getting help from Charles
+01:49 PM:	Sean Cassidy  has arrived in TA#007
+01:51 PM:	Sean Cassidy has borrowed laptop 70571329 and moved to TA line
+01:53 PM:	Cecilia Reyes has one more question answered and gotten back in line.
+01:53 PM:	Sean Cassidy is getting help from Charles
+01:54 PM:	Alexander Summers  has arrived in TA#007
+01:56 PM:	Alexander Summers has borrowed laptop 46933604 and moved to TA line
+01:58 PM:	Sean Cassidy has one more question answered and gotten back in line.
+01:58 PM:	Cecilia Reyes is getting help from Charles
+02:03 PM:	Cecilia Reyes has one more question answered and gotten back in line.
+02:03 PM:	Alexander Summers is getting help from Charles
+02:08 PM:	Alexander Summers has one more question answered and gotten back in line.
+02:08 PM:	Sean Cassidy is getting help from Charles
+02:13 PM:	Sean Cassidy has one more question answered and gotten back in line.
+02:13 PM:	Cecilia Reyes is getting help from Charles
+02:18 PM:	Cecilia Reyes has one more question answered and gotten back in line.
+02:18 PM:	Alexander Summers is getting help from Charles
+02:23 PM:	Alexander Summers has one more question answered and gotten back in line.
+02:23 PM:	Sean Cassidy is getting help from Charles
+02:28 PM:	Sean Cassidy has one more question answered and gotten back in line.
+02:28 PM:	Cecilia Reyes is getting help from Charles
+02:33 PM:	Cecilia Reyes has one more question answered and gotten back in line.
+02:33 PM:	Alexander Summers is getting help from Charles
+02:34 PM:	Neal Shaara  has arrived in TA#007
+02:36 PM:	Neal Shaara has borrowed laptop 28698737 and moved to TA line
+02:38 PM:	Alexander Summers has one more question answered and gotten back in line.
+02:38 PM:	Sean Cassidy is getting help from Charles
+02:43 PM:	Sean Cassidy has one more question answered and gotten back in line.
+02:43 PM:	Cecilia Reyes is getting help from Charles
+02:48 PM:	Cecilia Reyes has one more question answered and gotten back in line.
+02:48 PM:	Neal Shaara is getting help from Charles
+02:53 PM:	Neal Shaara has one more question answered and gotten back in line.
+02:53 PM:	Alexander Summers is getting help from Charles
+02:58 PM:	Alexander Summers has returned laptop 46933604 and went home Happy
+02:58 PM:	Sean Cassidy is getting help from Charles
+02:59 PM:	Nicholas Gleason  has arrived in TA#007
+03:00 PM:	Charles has finished lab hours.
+03:01 PM:	Nicholas Gleason never even got a laptop and went home FRUSTRATED.
+03:01 PM:	Sean Cassidy has returned laptop 70571329 and went home FRUSTRATED.
+03:02 PM:	Cecilia Reyes has returned laptop 23662766 and went home HAPPY.
+03:03 PM:	Neal Shaara has returned laptop 28698737 and went home FRUSTRATED.
+
+Monday's Lab Summary:
+The TA Lab was open for 3 hours and 4 minutes.
+9 students visited the lab. Out of those students, only 6 left happy.
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
+Tuesday:
+
+12:00 PM:	Charles has began lab hours
+12:49 PM:	Xi'an Manh  has arrived in TA#007
+12:51 PM:	Xi'an Manh has borrowed laptop 46933604 and moved to TA line
+12:51 PM:	Xi'an Manh is getting help from Charles
+12:52 PM:	Jean-Paul Beaubier  has arrived in TA#007
+12:54 PM:	Jean-Paul Beaubier has borrowed laptop 68428759 and moved to TA line
+12:56 PM:	Xi'an Manh has one more question answered and gotten back in line.
+12:56 PM:	Jean-Paul Beaubier is getting help from Charles
+01:01 PM:	Jean-Paul Beaubier has one more question answered and gotten back in line.
+01:01 PM:	Xi'an Manh is getting help from Charles
+01:06 PM:	Xi'an Manh has one more question answered and gotten back in line.
+01:06 PM:	Jean-Paul Beaubier is getting help from Charles
+01:11 PM:	Jean-Paul Beaubier has one more question answered and gotten back in line.
+01:11 PM:	Xi'an Manh is getting help from Charles
+01:12 PM:	Danielle Moonstar  has arrived in TA#007
+01:14 PM:	Danielle Moonstar has borrowed laptop 45594438 and moved to TA line
+01:16 PM:	Xi'an Manh has one more question answered and gotten back in line.
+01:16 PM:	Jean-Paul Beaubier is getting help from Charles
+01:21 PM:	Jean-Paul Beaubier has one more question answered and gotten back in line.
+01:21 PM:	Danielle Moonstar is getting help from Charles
+01:23 PM:	Tandy Bowen  has arrived in TA#007
+01:25 PM:	Tandy Bowen has borrowed laptop 42320451 and moved to TA line
+01:26 PM:	Danielle Moonstar has one more question answered and gotten back in line.
+01:26 PM:	Xi'an Manh is getting help from Charles
+01:31 PM:	Xi'an Manh has one more question answered and gotten back in line.
+01:31 PM:	Jean-Paul Beaubier is getting help from Charles
+01:36 PM:	Jean-Paul Beaubier has one more question answered and gotten back in line.
+01:36 PM:	Samuel Guthrie  has arrived in TA#007
+01:36 PM:	Tandy Bowen is getting help from Charles
+01:37 PM:	Santo Vaccarro  has arrived in TA#007
+01:38 PM:	Samuel Guthrie has borrowed laptop 24350204 and moved to TA line
+01:39 PM:	Santo Vaccarro has borrowed laptop 35073907 and moved to TA line
+01:41 PM:	Tandy Bowen has one more question answered and gotten back in line.
+01:41 PM:	James Bradley  has arrived in TA#007
+01:41 PM:	Danielle Moonstar is getting help from Charles
+01:43 PM:	James Bradley has borrowed laptop 47235759 and moved to TA line
+01:45 PM:	Paige Guthrie  has arrived in TA#007
+01:46 PM:	Danielle Moonstar has one more question answered and gotten back in line.
+01:46 PM:	James Proudstar  has arrived in TA#007
+01:46 PM:	Xi'an Manh is getting help from Charles
+01:47 PM:	Paige Guthrie has borrowed laptop 16994365 and moved to TA line
+01:48 PM:	James Proudstar has borrowed laptop 71281199 and moved to TA line
+01:51 PM:	Xi'an Manh has one more question answered and gotten back in line.
+01:51 PM:	Jean-Paul Beaubier is getting help from Charles
+01:56 PM:	Jean-Paul Beaubier has returned laptop 68428759 and went home Happy
+01:56 PM:	Samuel Guthrie is getting help from Charles
+01:58 PM:	Christy Nord  has arrived in TA#007
+02:00 PM:	Max has began lab hours
+02:00 PM:	Samuel Guthrie is getting help from Max
+02:05 PM:	Samuel Guthrie has one more question answered and gotten back in line.
+02:05 PM:	Santo Vaccarro is getting help from Charles
+02:05 PM:	Santo Vaccarro is getting help from Max
+02:09 PM:	Julian Keller  has arrived in TA#007
+02:10 PM:	Santo Vaccarro has one more question answered and gotten back in line.
+02:10 PM:	Tandy Bowen is getting help from Charles
+02:10 PM:	Tandy Bowen is getting help from Max
+02:12 PM:	Amara Aquilla  has arrived in TA#007
+02:15 PM:	Tandy Bowen has one more question answered and gotten back in line.
+02:15 PM:	James Bradley is getting help from Charles
+02:15 PM:	James Bradley is getting help from Max
+02:20 PM:	James Bradley has one more question answered and gotten back in line.
+02:20 PM:	Danielle Moonstar is getting help from Charles
+02:20 PM:	Danielle Moonstar is getting help from Max
+02:25 PM:	Danielle Moonstar has returned laptop 45594438 and went home Happy
+02:25 PM:	Paige Guthrie is getting help from Charles
+02:25 PM:	Paige Guthrie is getting help from Max
+02:26 PM:	Laura Kinney  has arrived in TA#007
+02:27 PM:	Nathaniel Grey  has arrived in TA#007
+02:28 PM:	John Proudstar  has arrived in TA#007
+02:30 PM:	Paige Guthrie has one more question answered and gotten back in line.
+02:30 PM:	James Proudstar is getting help from Charles
+02:30 PM:	James Proudstar is getting help from Max
+02:34 PM:	Hisako Ichiki  has arrived in TA#007
+02:35 PM:	James Proudstar has one more question answered and gotten back in line.
+02:35 PM:	Xi'an Manh is getting help from Charles
+02:35 PM:	Xi'an Manh is getting help from Max
+02:40 PM:	Xi'an Manh has returned laptop 46933604 and went home Happy
+02:40 PM:	Samuel Guthrie is getting help from Charles
+02:40 PM:	Samuel Guthrie is getting help from Max
+02:45 PM:	Samuel Guthrie has one more question answered and gotten back in line.
+02:45 PM:	Santo Vaccarro is getting help from Charles
+02:45 PM:	Santo Vaccarro is getting help from Max
+02:50 PM:	Santo Vaccarro has one more question answered and gotten back in line.
+02:50 PM:	Tandy Bowen is getting help from Charles
+02:50 PM:	Tandy Bowen is getting help from Max
+02:55 PM:	Tandy Bowen has one more question answered and gotten back in line.
+02:55 PM:	James Bradley is getting help from Charles
+02:55 PM:	James Bradley is getting help from Max
+03:00 PM:	James Bradley has one more question answered and gotten back in line.
+03:00 PM:	Paige Guthrie is getting help from Charles
+03:00 PM:	Paige Guthrie is getting help from Max
+03:00 PM:	Charles has finished lab hours.
+03:05 PM:	Paige Guthrie has one more question answered and gotten back in line.
+03:05 PM:	James Proudstar is getting help from Max
+03:10 PM:	James Proudstar has one more question answered and gotten back in line.
+03:10 PM:	Samuel Guthrie is getting help from Max
+03:15 PM:	Samuel Guthrie has returned laptop 24350204 and went home Happy
+03:15 PM:	Santo Vaccarro is getting help from Max
+03:20 PM:	Santo Vaccarro has one more question answered and gotten back in line.
+03:20 PM:	Tandy Bowen is getting help from Max
+03:25 PM:	Tandy Bowen has one more question answered and gotten back in line.
+03:25 PM:	James Bradley is getting help from Max
+03:30 PM:	James Bradley has one more question answered and gotten back in line.
+03:30 PM:	Paige Guthrie is getting help from Max
+03:35 PM:	Paige Guthrie has one more question answered and gotten back in line.
+03:35 PM:	James Proudstar is getting help from Max
+03:40 PM:	James Proudstar has one more question answered and gotten back in line.
+03:40 PM:	Santo Vaccarro is getting help from Max
+03:45 PM:	Santo Vaccarro has one more question answered and gotten back in line.
+03:45 PM:	Tandy Bowen is getting help from Max
+03:50 PM:	Tandy Bowen has returned laptop 42320451 and went home Happy
+03:50 PM:	James Bradley is getting help from Max
+03:51 PM:	David Alleyne  has arrived in TA#007
+03:55 PM:	James Bradley has one more question answered and gotten back in line.
+03:55 PM:	Paige Guthrie is getting help from Max
+04:00 PM:	Paige Guthrie has one more question answered and gotten back in line.
+04:00 PM:	James Proudstar is getting help from Max
+04:05 PM:	James Proudstar has returned laptop 71281199 and went home Happy
+04:05 PM:	Santo Vaccarro is getting help from Max
+04:10 PM:	Santo Vaccarro has one more question answered and gotten back in line.
+04:10 PM:	James Bradley is getting help from Max
+04:15 PM:	James Bradley has one more question answered and gotten back in line.
+04:15 PM:	Paige Guthrie is getting help from Max
+04:20 PM:	Paige Guthrie has returned laptop 16994365 and went home Happy
+04:20 PM:	Santo Vaccarro is getting help from Max
+04:25 PM:	Santo Vaccarro has returned laptop 35073907 and went home Happy
+04:25 PM:	James Bradley is getting help from Max
+04:30 PM:	James Bradley has returned laptop 47235759 and went home Happy
+04:31 PM:	Christy Nord never even got a laptop and went home FRUSTRATED.
+04:31 PM:	Julian Keller never even got a laptop and went home FRUSTRATED.
+04:31 PM:	Amara Aquilla never even got a laptop and went home FRUSTRATED.
+04:31 PM:	Laura Kinney never even got a laptop and went home FRUSTRATED.
+04:31 PM:	Nathaniel Grey never even got a laptop and went home FRUSTRATED.
+04:31 PM:	John Proudstar never even got a laptop and went home FRUSTRATED.
+04:31 PM:	Hisako Ichiki never even got a laptop and went home FRUSTRATED.
+04:31 PM:	David Alleyne never even got a laptop and went home FRUSTRATED.
+
+Tuesday's Lab Summary:
+The TA Lab was open for 4 hours and 31 minutes.
+17 students visited the lab. Out of those students, only 9 left happy.
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
+Wednesday:
+
+12:00 PM:	Max has began lab hours
+12:00 PM:	Max has finished lab hours.
+12:02 PM:	Wade Wilson  has arrived in TA#007
+12:04 PM:	Wade Wilson has borrowed laptop 47235759 and moved to TA line
+12:04 PM:	Wade Wilson is getting help from Max
+12:09 PM:	Wade Wilson has one more question answered and gotten back in line.
+12:09 PM:	Shiro Yoshida  has arrived in TA#007
+12:09 PM:	Wade Wilson is getting help from Max
+12:11 PM:	Shiro Yoshida has borrowed laptop 35073907 and moved to TA line
+12:14 PM:	Wade Wilson has one more question answered and gotten back in line.
+12:14 PM:	Shiro Yoshida is getting help from Max
+12:19 PM:	Shiro Yoshida has one more question answered and gotten back in line.
+12:19 PM:	Wade Wilson is getting help from Max
+12:24 PM:	Wade Wilson has one more question answered and gotten back in line.
+12:24 PM:	Shiro Yoshida is getting help from Max
+12:29 PM:	Shiro Yoshida has one more question answered and gotten back in line.
+12:29 PM:	Wade Wilson is getting help from Max
+12:34 PM:	Wade Wilson has one more question answered and gotten back in line.
+12:34 PM:	Shiro Yoshida is getting help from Max
+12:39 PM:	Shiro Yoshida has one more question answered and gotten back in line.
+12:39 PM:	Wade Wilson is getting help from Max
+12:44 PM:	Wade Wilson has one more question answered and gotten back in line.
+12:44 PM:	Shiro Yoshida is getting help from Max
+12:49 PM:	Shiro Yoshida has one more question answered and gotten back in line.
+12:49 PM:	Wade Wilson is getting help from Max
+12:54 PM:	Wade Wilson has returned laptop 47235759 and went home Happy
+12:54 PM:	Shiro Yoshida is getting help from Max
+12:59 PM:	Shiro Yoshida has returned laptop 35073907 and went home Happy
+02:00 PM:	Charles has began lab hours
+03:00 PM:	Charles has finished lab hours.
+
+Wednesday's Lab Summary:
+The TA Lab was open for 3 hours and 0 minutes.
+25 students visited the lab. Out of those students, only 2 left happy.
+NO ONE LIKES WEDNESDAYS
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
+**********
+Program 2
+**********
+Monday:
+
+12:00 PM:	Charles has began lab hours
+12:00 PM:	Max has finished lab hours.
+12:05 PM:	Cessily Kincaid  has arrived in TA#007
+12:07 PM:	Cessily Kincaid has borrowed laptop 35073907 and moved to TA line
+12:07 PM:	Cessily Kincaid is getting help from Charles
+12:12 PM:	Cessily Kincaid has returned laptop 35073907 and went home Happy
+12:13 PM:	Raven Darkholme  has arrived in TA#007
+12:15 PM:	Raven Darkholme has borrowed laptop 35073907 and moved to TA line
+12:15 PM:	Raven Darkholme is getting help from Charles
+12:20 PM:	Raven Darkholme has one more question answered and gotten back in line.
+12:20 PM:	Raven Darkholme is getting help from Charles
+12:21 PM:	Douglas Ramsey  has arrived in TA#007
+12:23 PM:	Douglas Ramsey has borrowed laptop 47235759 and moved to TA line
+12:25 PM:	Raven Darkholme has one more question answered and gotten back in line.
+12:25 PM:	Douglas Ramsey is getting help from Charles
+12:30 PM:	Douglas Ramsey has one more question answered and gotten back in line.
+12:30 PM:	Raven Darkholme is getting help from Charles
+12:35 PM:	Raven Darkholme has one more question answered and gotten back in line.
+12:35 PM:	Douglas Ramsey is getting help from Charles
+12:40 PM:	Douglas Ramsey has one more question answered and gotten back in line.
+12:40 PM:	Raven Darkholme is getting help from Charles
+12:45 PM:	Raven Darkholme has one more question answered and gotten back in line.
+12:45 PM:	Douglas Ramsey is getting help from Charles
+12:50 PM:	Douglas Ramsey has one more question answered and gotten back in line.
+12:50 PM:	Raven Darkholme is getting help from Charles
+12:55 PM:	Raven Darkholme has one more question answered and gotten back in line.
+12:55 PM:	Douglas Ramsey is getting help from Charles
+01:00 PM:	Douglas Ramsey has one more question answered and gotten back in line.
+01:00 PM:	Raven Darkholme is getting help from Charles
+01:05 PM:	Raven Darkholme has returned laptop 35073907 and went home Happy
+01:05 PM:	Douglas Ramsey is getting help from Charles
+01:10 PM:	Douglas Ramsey has one more question answered and gotten back in line.
+01:10 PM:	Douglas Ramsey is getting help from Charles
+01:15 PM:	Douglas Ramsey has returned laptop 47235759 and went home Happy
+01:15 PM:	Paris Bennett  has arrived in TA#007
+01:17 PM:	Paris Bennett has borrowed laptop 47235759 and moved to TA line
+01:17 PM:	Paris Bennett is getting help from Charles
+01:22 PM:	Paris Bennett has one more question answered and gotten back in line.
+01:22 PM:	Remy LeBeau  has arrived in TA#007
+01:22 PM:	Paris Bennett is getting help from Charles
+01:24 PM:	Remy LeBeau has borrowed laptop 35073907 and moved to TA line
+01:27 PM:	Paris Bennett has one more question answered and gotten back in line.
+01:27 PM:	Remy LeBeau is getting help from Charles
+01:28 PM:	Karima Shapandar  has arrived in TA#007
+01:30 PM:	Karima Shapandar has borrowed laptop 16994365 and moved to TA line
+01:32 PM:	Remy LeBeau has one more question answered and gotten back in line.
+01:32 PM:	Paris Bennett is getting help from Charles
+01:35 PM:	Alison Blaire  has arrived in TA#007
+01:37 PM:	Alison Blaire has borrowed laptop 71281199 and moved to TA line
+01:37 PM:	Paris Bennett has one more question answered and gotten back in line.
+01:37 PM:	Karima Shapandar is getting help from Charles
+01:42 PM:	Karima Shapandar has one more question answered and gotten back in line.
+01:42 PM:	Remy LeBeau is getting help from Charles
+01:47 PM:	Remy LeBeau has one more question answered and gotten back in line.
+01:47 PM:	Alison Blaire is getting help from Charles
+01:52 PM:	Alison Blaire has one more question answered and gotten back in line.
+01:52 PM:	Paris Bennett is getting help from Charles
+01:57 PM:	Paris Bennett has one more question answered and gotten back in line.
+01:57 PM:	Karima Shapandar is getting help from Charles
+02:02 PM:	Karima Shapandar has one more question answered and gotten back in line.
+02:02 PM:	Remy LeBeau is getting help from Charles
+02:07 PM:	Remy LeBeau has returned laptop 35073907 and went home Happy
+02:07 PM:	Alison Blaire is getting help from Charles
+02:12 PM:	Alison Blaire has one more question answered and gotten back in line.
+02:12 PM:	Paris Bennett is getting help from Charles
+02:17 PM:	Paris Bennett has returned laptop 47235759 and went home Happy
+02:17 PM:	Karima Shapandar is getting help from Charles
+02:18 PM:	Robert Kelly  has arrived in TA#007
+02:20 PM:	Robert Kelly has borrowed laptop 47235759 and moved to TA line
+02:22 PM:	Karima Shapandar has one more question answered and gotten back in line.
+02:22 PM:	Alison Blaire is getting help from Charles
+02:27 PM:	Alison Blaire has one more question answered and gotten back in line.
+02:27 PM:	Robert Kelly is getting help from Charles
+02:32 PM:	Robert Kelly has one more question answered and gotten back in line.
+02:32 PM:	Karima Shapandar is getting help from Charles
+02:37 PM:	Karima Shapandar has one more question answered and gotten back in line.
+02:37 PM:	Alison Blaire is getting help from Charles
+02:42 PM:	Alison Blaire has returned laptop 71281199 and went home Happy
+02:42 PM:	Robert Kelly is getting help from Charles
+02:47 PM:	Robert Kelly has one more question answered and gotten back in line.
+02:47 PM:	Karima Shapandar is getting help from Charles
+02:52 PM:	Karima Shapandar has one more question answered and gotten back in line.
+02:52 PM:	Robert Kelly is getting help from Charles
+02:56 PM:	Rachel Summers  has arrived in TA#007
+02:57 PM:	Robert Kelly has one more question answered and gotten back in line.
+02:57 PM:	Karima Shapandar is getting help from Charles
+02:58 PM:	Rachel Summers has borrowed laptop 71281199 and moved to TA line
+03:00 PM:	Charles has finished lab hours.
+03:01 PM:	Karima Shapandar has returned laptop 16994365 and went home HAPPY.
+03:02 PM:	Robert Kelly has one more question answered and gotten back in line.
+03:02 PM:	Rachel Summers has returned laptop 71281199 and went home FRUSTRATED.
+03:03 PM:	Robert Kelly has returned laptop 47235759 and went home HAPPY.
+
+Monday's Lab Summary:
+The TA Lab was open for 3 hours and 4 minutes.
+9 students visited the lab. Out of those students, only 8 left happy.
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
+Tuesday:
+
+12:00 PM:	Charles has began lab hours
+12:08 PM:	Victor Borkowski  has arrived in TA#007
+12:10 PM:	Victor Borkowski has borrowed laptop 35073907 and moved to TA line
+12:10 PM:	Victor Borkowski is getting help from Charles
+12:15 PM:	Victor Borkowski has one more question answered and gotten back in line.
+12:15 PM:	Victor Borkowski is getting help from Charles
+12:20 PM:	Victor Borkowski has one more question answered and gotten back in line.
+12:20 PM:	Victor Borkowski is getting help from Charles
+12:25 PM:	Victor Borkowski has one more question answered and gotten back in line.
+12:25 PM:	Victor Borkowski is getting help from Charles
+12:30 PM:	Victor Borkowski has one more question answered and gotten back in line.
+12:30 PM:	Victor Borkowski is getting help from Charles
+12:35 PM:	Victor Borkowski has returned laptop 35073907 and went home Happy
+12:39 PM:	Kevin MacTaggert  has arrived in TA#007
+12:40 PM:	Scott Summers  has arrived in TA#007
+12:41 PM:	Kevin MacTaggert has borrowed laptop 35073907 and moved to TA line
+12:41 PM:	Kevin MacTaggert is getting help from Charles
+12:42 PM:	Scott Summers has borrowed laptop 42320451 and moved to TA line
+12:46 PM:	Kevin MacTaggert has one more question answered and gotten back in line.
+12:46 PM:	Scott Summers is getting help from Charles
+12:47 PM:	Namor McKenzie  has arrived in TA#007
+12:49 PM:	Namor McKenzie has borrowed laptop 24350204 and moved to TA line
+12:51 PM:	Scott Summers has returned laptop 42320451 and went home Happy
+12:51 PM:	Kevin MacTaggert is getting help from Charles
+12:56 PM:	Kevin MacTaggert has one more question answered and gotten back in line.
+12:56 PM:	Namor McKenzie is getting help from Charles
+12:59 PM:	Robert Drake  has arrived in TA#007
+01:01 PM:	Robert Drake has borrowed laptop 42320451 and moved to TA line
+01:01 PM:	Namor McKenzie has one more question answered and gotten back in line.
+01:01 PM:	Kevin MacTaggert is getting help from Charles
+01:06 PM:	Kevin MacTaggert has one more question answered and gotten back in line.
+01:06 PM:	Robert Drake is getting help from Charles
+01:09 PM:	Miranda Leevald  has arrived in TA#007
+01:11 PM:	Miranda Leevald has borrowed laptop 46933604 and moved to TA line
+01:11 PM:	Robert Drake has one more question answered and gotten back in line.
+01:11 PM:	Namor McKenzie is getting help from Charles
+01:16 PM:	Namor McKenzie has one more question answered and gotten back in line.
+01:16 PM:	Kevin MacTaggert is getting help from Charles
+01:21 PM:	Kevin MacTaggert has returned laptop 35073907 and went home Happy
+01:21 PM:	Miranda Leevald is getting help from Charles
+01:26 PM:	Miranda Leevald has returned laptop 46933604 and went home Happy
+01:26 PM:	Robert Drake is getting help from Charles
+01:31 PM:	Robert Drake has one more question answered and gotten back in line.
+01:31 PM:	Namor McKenzie is getting help from Charles
+01:36 PM:	Namor McKenzie has one more question answered and gotten back in line.
+01:36 PM:	Robert Drake is getting help from Charles
+01:41 PM:	Robert Drake has one more question answered and gotten back in line.
+01:41 PM:	Namor McKenzie is getting help from Charles
+01:46 PM:	Namor McKenzie has one more question answered and gotten back in line.
+01:46 PM:	Robert Drake is getting help from Charles
+01:51 PM:	Robert Drake has one more question answered and gotten back in line.
+01:51 PM:	Namor McKenzie is getting help from Charles
+01:56 PM:	Namor McKenzie has one more question answered and gotten back in line.
+01:56 PM:	Robert Drake is getting help from Charles
+01:57 PM:	Megan Gwynn  has arrived in TA#007
+01:59 PM:	Megan Gwynn has borrowed laptop 46933604 and moved to TA line
+02:00 PM:	Max has began lab hours
+02:00 PM:	Robert Drake is getting help from Max
+02:05 PM:	Robert Drake has returned laptop 42320451 and went home Happy
+02:05 PM:	Namor McKenzie is getting help from Charles
+02:05 PM:	Namor McKenzie is getting help from Max
+02:10 PM:	Namor McKenzie has returned laptop 24350204 and went home Happy
+02:10 PM:	Megan Gwynn is getting help from Charles
+02:10 PM:	Megan Gwynn is getting help from Max
+02:15 PM:	Megan Gwynn has one more question answered and gotten back in line.
+02:15 PM:	Bolivar Trask  has arrived in TA#007
+02:15 PM:	Megan Gwynn is getting help from Charles
+02:15 PM:	Megan Gwynn is getting help from Max
+02:16 PM:	Calvin Rankin  has arrived in TA#007
+02:20 PM:	Megan Gwynn has one more question answered and gotten back in line.
+02:20 PM:	Megan Gwynn is getting help from Charles
+02:20 PM:	Megan Gwynn is getting help from Max
+02:23 PM:	David Haller  has arrived in TA#007
+02:25 PM:	Megan Gwynn has one more question answered and gotten back in line.
+02:25 PM:	Megan Gwynn is getting help from Charles
+02:25 PM:	Megan Gwynn is getting help from Max
+02:30 PM:	Megan Gwynn has one more question answered and gotten back in line.
+02:30 PM:	Megan Gwynn is getting help from Charles
+02:30 PM:	Megan Gwynn is getting help from Max
+02:35 PM:	Megan Gwynn has returned laptop 46933604 and went home Happy
+02:36 PM:	Bolivar Trask never even got a laptop and went home FRUSTRATED.
+02:36 PM:	Calvin Rankin never even got a laptop and went home FRUSTRATED.
+02:36 PM:	David Haller never even got a laptop and went home FRUSTRATED.
+
+Tuesday's Lab Summary:
+The TA Lab was open for 2 hours and 36 minutes.
+16 students visited the lab. Out of those students, only 7 left happy.
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
+Wednesday:
+
+12:00 PM:	Max has finished lab hours.
+12:06 PM:	Jason Wyngarde  has arrived in TA#007
+12:08 PM:	Jason Wyngarde has borrowed laptop 46933604 and moved to TA line
+12:08 PM:	Jason Wyngarde is getting help from Charles
+12:09 PM:	Shen Xorn  has arrived in TA#007
+12:10 PM:	Henry McCoy  has arrived in TA#007
+12:11 PM:	Shen Xorn has borrowed laptop 24350204 and moved to TA line
+12:12 PM:	Henry McCoy has borrowed laptop 42320451 and moved to TA line
+12:13 PM:	Jason Wyngarde has one more question answered and gotten back in line.
+12:13 PM:	Shen Xorn is getting help from Charles
+12:14 PM:	Jeanne-Marie Beaubier  has arrived in TA#007
+12:16 PM:	Jeanne-Marie Beaubier has borrowed laptop 35073907 and moved to TA line
+12:17 PM:	Illyana Rasputina  has arrived in TA#007
+12:18 PM:	Shen Xorn has one more question answered and gotten back in line.
+12:18 PM:	Henry McCoy is getting help from Charles
+12:19 PM:	Illyana Rasputina has borrowed laptop 45594438 and moved to TA line
+12:23 PM:	Henry McCoy has one more question answered and gotten back in line.
+12:23 PM:	Jason Wyngarde is getting help from Charles
+12:24 PM:	Gabriel Summers  has arrived in TA#007
+12:25 PM:	Nathan Summers  has arrived in TA#007
+12:26 PM:	Gabriel Summers has borrowed laptop 68428759 and moved to TA line
+12:27 PM:	Nathan Summers has borrowed laptop 89594006 and moved to TA line
+12:28 PM:	Jason Wyngarde has one more question answered and gotten back in line.
+12:28 PM:	Jeanne-Marie Beaubier is getting help from Charles
+12:32 PM:	Suzanne Chan  has arrived in TA#007
+12:33 PM:	Jeanne-Marie Beaubier has one more question answered and gotten back in line.
+12:33 PM:	Shen Xorn is getting help from Charles
+12:34 PM:	Suzanne Chan has borrowed laptop 14759708 and moved to TA line
+12:38 PM:	Shen Xorn has returned laptop 24350204 and went home Happy
+12:38 PM:	Illyana Rasputina is getting help from Charles
+12:43 PM:	Illyana Rasputina has one more question answered and gotten back in line.
+12:43 PM:	Henry McCoy is getting help from Charles
+12:48 PM:	Henry McCoy has one more question answered and gotten back in line.
+12:48 PM:	Gabriel Summers is getting help from Charles
+12:52 PM:	Lorna Dane  has arrived in TA#007
+12:53 PM:	Gabriel Summers has one more question answered and gotten back in line.
+12:53 PM:	Nathan Summers is getting help from Charles
+12:54 PM:	Lorna Dane has borrowed laptop 24350204 and moved to TA line
+12:58 PM:	Nathan Summers has one more question answered and gotten back in line.
+12:58 PM:	Jason Wyngarde is getting help from Charles
+01:02 PM:	Karl Lykos  has arrived in TA#007
+01:03 PM:	Jason Wyngarde has returned laptop 46933604 and went home Happy
+01:03 PM:	Jeanne-Marie Beaubier is getting help from Charles
+01:04 PM:	Karl Lykos has borrowed laptop 46933604 and moved to TA line
+01:08 PM:	Jeanne-Marie Beaubier has one more question answered and gotten back in line.
+01:08 PM:	Suzanne Chan is getting help from Charles
+01:13 PM:	Suzanne Chan has one more question answered and gotten back in line.
+01:13 PM:	Yuriko Oyama  has arrived in TA#007
+01:13 PM:	Illyana Rasputina is getting help from Charles
+01:15 PM:	Yuriko Oyama has borrowed laptop 88812998 and moved to TA line
+01:18 PM:	Illyana Rasputina has one more question answered and gotten back in line.
+01:18 PM:	Henry McCoy is getting help from Charles
+01:23 PM:	Henry McCoy has one more question answered and gotten back in line.
+01:23 PM:	Gabriel Summers is getting help from Charles
+01:28 PM:	Gabriel Summers has one more question answered and gotten back in line.
+01:28 PM:	Roberto Da_Costa  has arrived in TA#007
+01:28 PM:	Lorna Dane is getting help from Charles
+01:30 PM:	Roberto Da_Costa has borrowed laptop 24124626 and moved to TA line
+01:33 PM:	Lorna Dane has returned laptop 24350204 and went home Happy
+01:33 PM:	Nathan Summers is getting help from Charles
+01:38 PM:	Nathan Summers has one more question answered and gotten back in line.
+01:38 PM:	Karl Lykos is getting help from Charles
+01:43 PM:	Karl Lykos has one more question answered and gotten back in line.
+01:43 PM:	Jeanne-Marie Beaubier is getting help from Charles
+01:45 PM:	Madelyne Pryor  has arrived in TA#007
+01:47 PM:	Madelyne Pryor has borrowed laptop 24350204 and moved to TA line
+01:48 PM:	Jeanne-Marie Beaubier has one more question answered and gotten back in line.
+01:48 PM:	Suzanne Chan is getting help from Charles
+01:53 PM:	Suzanne Chan has one more question answered and gotten back in line.
+01:53 PM:	Yuriko Oyama is getting help from Charles
+01:58 PM:	Yuriko Oyama has one more question answered and gotten back in line.
+01:58 PM:	Illyana Rasputina is getting help from Charles
+02:00 PM:	Charles has began lab hours
+02:00 PM:	Illyana Rasputina is getting help from Charles
+02:00 PM:	Illyana Rasputina is getting help from Max
+02:05 PM:	Illyana Rasputina has returned laptop 45594438 and went home Happy
+02:05 PM:	Henry McCoy is getting help from Charles
+02:05 PM:	Henry McCoy is getting help from Max
+02:10 PM:	Henry McCoy has one more question answered and gotten back in line.
+02:10 PM:	Gabriel Summers is getting help from Charles
+02:10 PM:	Gabriel Summers is getting help from Max
+02:15 PM:	Gabriel Summers has one more question answered and gotten back in line.
+02:15 PM:	Roberto Da_Costa is getting help from Charles
+02:15 PM:	Roberto Da_Costa is getting help from Max
+02:20 PM:	Roberto Da_Costa has returned laptop 24124626 and went home Happy
+02:20 PM:	Nathan Summers is getting help from Charles
+02:20 PM:	Nathan Summers is getting help from Max
+02:25 PM:	Nathan Summers has one more question answered and gotten back in line.
+02:25 PM:	Karl Lykos is getting help from Charles
+02:25 PM:	Karl Lykos is getting help from Max
+02:30 PM:	Karl Lykos has one more question answered and gotten back in line.
+02:30 PM:	Madelyne Pryor is getting help from Charles
+02:30 PM:	Madelyne Pryor is getting help from Max
+02:35 PM:	Madelyne Pryor has one more question answered and gotten back in line.
+02:35 PM:	Jeanne-Marie Beaubier is getting help from Charles
+02:35 PM:	Jeanne-Marie Beaubier is getting help from Max
+02:40 PM:	Jeanne-Marie Beaubier has one more question answered and gotten back in line.
+02:40 PM:	Suzanne Chan is getting help from Charles
+02:40 PM:	Suzanne Chan is getting help from Max
+02:45 PM:	Suzanne Chan has one more question answered and gotten back in line.
+02:45 PM:	Yuriko Oyama is getting help from Charles
+02:45 PM:	Yuriko Oyama is getting help from Max
+02:50 PM:	Yuriko Oyama has one more question answered and gotten back in line.
+02:50 PM:	Henry McCoy is getting help from Charles
+02:50 PM:	Henry McCoy is getting help from Max
+02:55 PM:	Henry McCoy has returned laptop 42320451 and went home Happy
+02:55 PM:	Gabriel Summers is getting help from Charles
+02:55 PM:	Gabriel Summers is getting help from Max
+03:00 PM:	Gabriel Summers has one more question answered and gotten back in line.
+03:00 PM:	Nathan Summers is getting help from Charles
+03:00 PM:	Nathan Summers is getting help from Max
+03:00 PM:	Charles has finished lab hours.
+03:05 PM:	Nathan Summers has one more question answered and gotten back in line.
+03:05 PM:	Karl Lykos is getting help from Max
+03:10 PM:	Karl Lykos has returned laptop 46933604 and went home Happy
+03:10 PM:	Madelyne Pryor is getting help from Max
+03:15 PM:	Madelyne Pryor has one more question answered and gotten back in line.
+03:15 PM:	Jeanne-Marie Beaubier is getting help from Max
+03:20 PM:	Jeanne-Marie Beaubier has returned laptop 35073907 and went home Happy
+03:20 PM:	Suzanne Chan is getting help from Max
+03:25 PM:	Suzanne Chan has one more question answered and gotten back in line.
+03:25 PM:	Yuriko Oyama is getting help from Max
+03:30 PM:	Yuriko Oyama has one more question answered and gotten back in line.
+03:30 PM:	Gabriel Summers is getting help from Max
+03:35 PM:	Gabriel Summers has returned laptop 68428759 and went home Happy
+03:35 PM:	Nathan Summers is getting help from Max
+03:40 PM:	Nathan Summers has one more question answered and gotten back in line.
+03:40 PM:	Madelyne Pryor is getting help from Max
+03:45 PM:	Madelyne Pryor has one more question answered and gotten back in line.
+03:45 PM:	Suzanne Chan is getting help from Max
+03:50 PM:	Suzanne Chan has one more question answered and gotten back in line.
+03:50 PM:	Yuriko Oyama is getting help from Max
+03:55 PM:	Yuriko Oyama has one more question answered and gotten back in line.
+03:55 PM:	Nathan Summers is getting help from Max
+04:00 PM:	Nathan Summers has returned laptop 89594006 and went home Happy
+04:00 PM:	Madelyne Pryor is getting help from Max
+04:05 PM:	Madelyne Pryor has one more question answered and gotten back in line.
+04:05 PM:	Suzanne Chan is getting help from Max
+04:10 PM:	Suzanne Chan has returned laptop 14759708 and went home Happy
+04:10 PM:	Yuriko Oyama is getting help from Max
+04:15 PM:	Yuriko Oyama has one more question answered and gotten back in line.
+04:15 PM:	Madelyne Pryor is getting help from Max
+04:20 PM:	Madelyne Pryor has returned laptop 24350204 and went home Happy
+04:20 PM:	Yuriko Oyama is getting help from Max
+04:25 PM:	Yuriko Oyama has returned laptop 88812998 and went home Happy
+
+Wednesday's Lab Summary:
+The TA Lab was open for 4 hours and 26 minutes.
+26 students visited the lab. Out of those students, only 13 left happy.
+NO ONE LIKES WEDNESDAYS
+The remaining left frustrated.
+
+Lesson Learned:  Do not procrastinate!  Start programs early!
+
+
